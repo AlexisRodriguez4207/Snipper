@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1REM = 10 pixeles*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  /*Interlineado*/
+  line-height: 2;
+  /* width: 80%; */
+  margin: 0 auto;
+}
+
+.grad-bg {
+  background-image: url("/assets/img/Background.png");
+  background-repeat: no-repeat;
+}
+
+.Opc {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.nav-lf {
+  margin-left: 90rem;
+}
+
+.GetS {
+  background-color: black;
+  color: #fff;
+}
+
+.Code {
+  width: 50%;
+}
