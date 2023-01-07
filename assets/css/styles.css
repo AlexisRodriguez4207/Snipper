@@ -14,22 +14,31 @@ body {
   font-size: 1.6rem;
   /*Interlineado*/
   line-height: 2;
-  /* width: 80%; */
-  margin: 0 auto;
 }
 
 .grad-bg {
+  width: 100%;
   background-image: url("/assets/img/Background.png");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Content {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .Opc {
   display: flex;
+}
+
+.Logo {
   margin-top: 4rem;
 }
 
 .nav-lf {
-  margin-left: 90rem;
+  margin-left: 75rem;
+  margin-top: 4rem;
 }
 
 .GetS {
@@ -38,5 +47,20 @@ body {
 }
 
 .Code {
+  width: 50%;
+}
+
+.bg-wht {
+  background-color: white;
+  width: 100%;
+}
+
+.text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.Custom {
   width: 50%;
 }
