@@ -10,12 +10,14 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   /*Interlineado*/
   line-height: 2;
+  margin: 0 auto;
 }
 
+/*Header*/
 .grad-bg {
   width: 100%;
   background-image: url("/assets/img/Background.png");
@@ -23,31 +25,74 @@ body {
   background-size: cover;
 }
 
-.Content {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .Opc {
   display: flex;
+  padding: 2.5rem 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.Logo {
-  margin-top: 4rem;
+.nav-rg {
+  display: flex;
+  align-items: center;
 }
 
-.nav-lf {
-  margin-left: 75rem;
-  margin-top: 4rem;
+.Search {
+  cursor: pointer;
+}
+
+.Sign {
+  text-decoration: none;
+  color: #000;
+  margin: 1rem;
 }
 
 .GetS {
   background-color: black;
   color: #fff;
+  width: 15rem;
+  padding: 1.5rem 1.2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.fr {
+  color: #808080;
+  font-weight: 300;
+}
+
+.Content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 120rem;
+}
+
+/*Main*/
+.Princ {
+  width: 64rem;
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.SubMen {
+  width: 64rem;
+  margin: 0 auto;
+}
+
+.SubMen p {
+  font-weight: 500;
+  color: #383838;
+}
+
+.Marg {
+  line-height: 0;
 }
 
 .Code {
-  width: 50%;
+  width: 100%;
 }
 
 .bg-wht {
@@ -59,8 +104,43 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  padding-top: 5rem;
+  justify-items: end;
+}
+
+.Info {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.Info h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.Info p {
+  font-weight: 500;
 }
 
 .Custom {
-  width: 50%;
+  width: 80%;
+  float: left;
+}
+
+/*Footer*/
+.Footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 120rem;
+}
+
+.Footer a {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1.7rem;
+  color: #000;
 }
