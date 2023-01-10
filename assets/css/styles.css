@@ -25,6 +25,13 @@ body {
   background-size: cover;
 }
 
+.Content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 120rem;
+}
+
 .Opc {
   display: flex;
   padding: 2.5rem 0;
@@ -62,11 +69,8 @@ body {
   font-weight: 300;
 }
 
-.Content {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 120rem;
+.Menu {
+  display: none;
 }
 
 /*Main*/
@@ -102,6 +106,7 @@ body {
 
 .text {
   display: grid;
+  grid-template-columns: 0;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding-top: 5rem;
@@ -143,4 +148,104 @@ body {
   text-decoration: none;
   padding: 1.7rem;
   color: #000;
+}
+
+/* Vista Tablet */
+@media only screen and (max-width: 1000px) {
+  /*Header*/
+  .grad-bg {
+    width: 100%;
+    background-image: url("/assets/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Content {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+
+  .nav-rg {
+    display: none;
+  }
+
+  .Menu {
+    display: flex;
+    cursor: pointer;
+  }
+  /* Main */
+  .Princ {
+    width: 80%;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+
+  .SubMen {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .GetS {
+    width: 100%;
+    padding: 1.5rem 9rem;
+    text-align: center;
+  }
+
+  .Marg {
+    line-height: 0;
+  }
+
+  .text {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    grid-template-columns: none;
+  }
+
+  .Info {
+    margin-top: -2rem;
+  }
+
+  .Info h1 {
+    text-align: left;
+  }
+
+  .Info p {
+    font-size: medium;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .Custom {
+    width: 100%;
+  }
+
+  .Ord {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .GetS2 {
+    padding: 1.5rem 1.2rem;
+  }
+
+  /*Footer*/
+  .Footer {
+    width: 80%;
+    max-width: 120rem;
+    display: block;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .Footer a {
+    padding: 0;
+    margin-right: 1rem;
+  }
 }
